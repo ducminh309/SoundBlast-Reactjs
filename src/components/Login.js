@@ -90,7 +90,9 @@ const Login = () => {
                   Remember me
                 </label>
               </div>
-              <a href="#" className="text-decoration-none small">Forgot password?</a>
+              <Link to="/forgot-password" className="text-decoration-none">
+                 Forgot Password?
+              </Link>
             </div>
 
             <button type="submit" className="btn btn-primary w-100" disabled={loading}>

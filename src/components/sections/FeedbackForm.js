@@ -1,78 +1,100 @@
-import React from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from "react";
+import axios from "axios";
+import { Form, Button, Alert, Spinner } from "react-bootstrap";
 
 const FeedbackForm = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const [status, setStatus] = useState({ success: false, error: false, loading: false });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus({ ...status, loading: true });
+
+    axios.post("http://localhost:8000/api/feedback", form)
+      .then(() => {
+        setStatus({ success: true, error: false, loading: false });
+        setForm({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        setStatus({ success: false, error: true, loading: false });
+      });
+  };
+
   return (
-    <section
-      style={{
-        background: "linear-gradient(135deg, #c084fc, #f3e8ff)",
-        padding: '80px 0'
-      }}
-    >
-      <Container>
-      <h2
-  className="text-center fw-bold mb-5"
-  style={{ color: '#6a1b9a', fontSize: '2.5rem' }}
->
-  FEEDBACK
-</h2>
+    <section id="feedback" className="my-5 px-3">
+      <h2 className="text-center fw-bold mb-4">📬 SEND FEEDBACK</h2>
 
+      <div className="mx-auto p-4 rounded shadow-sm bg-light" style={{ maxWidth: "600px" }}>
+        {status.success && <Alert variant="success">🎉 Feedback sent successfully!</Alert>}
+        {status.error && <Alert variant="danger">❌ Something went wrong. Try again.</Alert>}
 
-        <Form className="bg-white bg-opacity-25 p-5 rounded-4 shadow-lg text-white">
-          <Row className="mb-4">
-            <Col md={6}>
-              <Form.Group controlId="formName">
-              <Form.Label style={{ color: '#333', fontWeight: 500 }}>Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter your name" />
-              </Form.Group>
-            </Col>
-            <Col md={6}>
-              <Form.Group controlId="formEmail">
-              <Form.Label style={{ color: '#333', fontWeight: 500 }}>Email</Form.Label>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group className="mb-3">
+            <Form.Label>Full Name</Form.Label>
+            <Form.Control
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              value={form.name}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
 
-                <Form.Control type="email" placeholder="Enter your email" />
-              </Form.Group>
-            </Col>
-          </Row>
+          <Form.Group className="mb-3">
+            <Form.Label>Email Address</Form.Label>
+            <Form.Control
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              value={form.email}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
 
-          <Row className="mb-4">
-            <Col md={6}>
-              <Form.Group controlId="formSubject">
-              <Form.Label style={{ color: '#333', fontWeight: 500 }}>Subject</Form.Label>
+          <Form.Group className="mb-3">
+            <Form.Label>Subject</Form.Label>
+            <Form.Control
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              value={form.subject}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
 
-                <Form.Control type="text" placeholder="Enter subject" />
-              </Form.Group>
-            </Col>
-            <Col md={6}>
-              <Form.Group controlId="formNickname">
-              <Form.Label style={{ color: '#333', fontWeight: 500 }}>Nickname</Form.Label>
-
-                <Form.Control type="text" placeholder="Enter nickname" />
-              </Form.Group>
-            </Col>
-          </Row>
-
-          <Form.Group controlId="formMessage" className="mb-4">
-          <Form.Label style={{ color: '#333', fontWeight: 500 }}>Message</Form.Label>
-
-            <Form.Control as="textarea" rows={6} placeholder="Write your feedback here..." />
+          <Form.Group className="mb-4">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              name="message"
+              rows={4}
+              placeholder="Your feedback..."
+              value={form.message}
+              onChange={handleChange}
+              required
+            />
           </Form.Group>
 
           <div className="text-center">
-          <Button
-  type="submit"
-  className="px-5 py-2 fw-bold text-white"
-  style={{
-    background: 'linear-gradient(90deg, #9b51e0, #6a1b9a)',
-    border: 'none'
-  }}
->
-  SEND »
-</Button>
-
+            <Button type="submit" variant="primary" disabled={status.loading}>
+              {status.loading ? <Spinner size="sm" animation="border" /> : "Send Feedback"}
+            </Button>
           </div>
         </Form>
-      </Container>
+      </div>
     </section>
   );
 };

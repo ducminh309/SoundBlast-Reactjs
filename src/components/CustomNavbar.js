@@ -48,26 +48,28 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
         <BootstrapNavbar.Toggle aria-controls="main-navbar-nav" />
         <BootstrapNavbar.Collapse id="main-navbar-nav">
   {/* Navigation */}
+
   <Nav
-    className="me-auto d-flex align-items-center gap-3 text-uppercase fw-semibold"
-    activeKey={activeMenu}
-    onSelect={(selectedKey) => setActiveMenu(selectedKey)}
-  >
-    <Nav.Link eventKey="#trending" href="#trending">Trending</Nav.Link>
-    <Nav.Link eventKey="#topcharts" href="#topcharts">TopCharts</Nav.Link>
-    <Nav.Link eventKey="#new" href="#new">New Releases</Nav.Link>
-    <NavDropdown title="More" id="more-dropdown">
-      <NavDropdown.Item href="#Genres">Genres</NavDropdown.Item>
-      <NavDropdown.Item href="#Gallery">Gallery</NavDropdown.Item>
-      <NavDropdown.Item href="#Languages">Languages</NavDropdown.Item>
-      <NavDropdown.Item href="#LatestAlbums">Latest Albums</NavDropdown.Item>
-      <NavDropdown.Item href="#TopArtist">Top Artist</NavDropdown.Item>
-      <NavDropdown.Item href="#OldSongs">OldSongs</NavDropdown.Item>
-      <NavDropdown.Item href="#TopSearchedSongs">TopSearchedSongs</NavDropdown.Item>
-      <NavDropdown.Item href="#ReviewSection">ReviewSection</NavDropdown.Item>
-      <NavDropdown.Item href="#FeedBack">FeedBack</NavDropdown.Item>
-    </NavDropdown>
-  </Nav>
+  className="me-auto d-flex align-items-center gap-3 text-uppercase fw-semibold"
+  activeKey={activeMenu}
+  onSelect={(selectedKey) => setActiveMenu(selectedKey)}
+>
+  <Nav.Link as={Link} to="/trending" eventKey="/trending">Trending</Nav.Link>
+  <Nav.Link as={Link} to="/top-charts" eventKey="/top-charts">TopCharts</Nav.Link>
+  <Nav.Link as={Link} to="/new-releases" eventKey="/new-releases">New Releases</Nav.Link>
+
+  <NavDropdown title="More" id="more-dropdown">
+    <NavDropdown.Item as={Link} to="/genres">Genres</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/gallery">Gallery</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/languages">Languages</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/latest-albums">Latest Albums</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/top-artists">Top Artist</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/old-songs">OldSongs</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/top-searched">TopSearchedSongs</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/reviews">ReviewSection</NavDropdown.Item>
+    <NavDropdown.Item as={Link} to="/feedback">FeedBack</NavDropdown.Item>
+  </NavDropdown>
+</Nav>
 
   {/* RIGHT SECTION: Search + Theme + Visitors + Login */}
   <div className="d-flex align-items-center gap-3 ms-auto">

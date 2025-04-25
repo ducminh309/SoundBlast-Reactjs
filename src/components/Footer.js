@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaArrowUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -37,9 +38,10 @@ const Footer = () => {
               📧 support@soundblast.com
             </p>
             <div className="text-center">
-              <a href="#" className="text-info text-decoration-none mx-2">About Us</a> |
-              <a href="#" className="text-info text-decoration-none mx-2">Contact</a> |
-              <a href="#" className="text-info text-decoration-none mx-2">Privacy</a>
+            <Link to="/about" className="text-info text-decoration-none mx-2">About Us</Link> |
+            <Link to="/contact" className="text-info text-decoration-none mx-2">Contact</Link> |
+            <Link to="/privacy" className="text-info text-decoration-none mx-2">Privacy</Link> |
+            <Link to="/site-map" className="text-info text-decoration-none mx-2">Site Map</Link>
             </div>
           </div>
 

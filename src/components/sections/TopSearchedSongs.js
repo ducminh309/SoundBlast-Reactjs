@@ -1,22 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const TopSearchedSongs = () => {
-  const topSearches = ['See You Again', 'Shape of You', 'Let Her Go', 'Despacito'];
+  const [songs, setSongs] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/api/top-searched-songs")
+      .then((res) => setSongs(res.data))
+      .catch((err) => console.error("Error fetching top searched songs:", err));
+  }, []);
 
   return (
-    <section>
-      <h2 className="text-3xl font-bold mb-6 text-center mt-4">🔍 Top Searched Songs</h2>
-      <div className="bg-white shadow rounded-xl p-6 max-w-xl mx-auto">
-        <ol className="list-decimal pl-6 space-y-3 text-lg">
-          {topSearches.map((song, index) => (
-            <li key={index}>{song}</li>
-          ))}
-        </ol>
-      </div>
+    <section id="topsearchedsongs" className="my-5 px-3">
+      <h2 className="mb-4 text-center fw-bold">🔍 TOP SEARCHED SONGS</h2>
+
+      <ul className="list-group">
+        {songs.map((song) => (
+          <li key={song.id} className="list-group-item">
+            <strong>{song.title}</strong> – {song.artist}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
 
 export default TopSearchedSongs;
+
 
 

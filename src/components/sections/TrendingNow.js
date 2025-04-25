@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Spinner } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import axios from "axios";
+import CustomAudioCard from "../CustomAudioCard";
 
 const TrendingNow = () => {
   const [songs, setSongs] = useState([]);
@@ -23,35 +24,20 @@ const TrendingNow = () => {
     <Container className="py-4 text-center">
       <h2 className="mb-4">🔥 Trending Now</h2>
 
-
       {loading ? (
-        <div className="text-center">
-          <Spinner animation="border" variant="primary" />
-        </div>
+        <Spinner animation="border" variant="primary" />
       ) : (
-        <Row className="text-center">
+        <Row className="justify-content-center">
           {songs.map((song) => (
             <Col md={4} key={song.id}>
-              <Card className="mb-4 shadow-sm">
-                <Card.Img
-                  variant="top"
-                  src={`http://localhost:8000/${song.image}`}
-                  alt={song.title}
-                  height="220px"
-                  style={{ objectFit: "cover" }}
-                  
-                />
-               
-                <Card.Body>
-                  <Card.Title>{song.title}</Card.Title>
-                  <Card.Text>{song.artist}</Card.Text>
-                  <audio controls src={`http://localhost:8000/${song.audio}`} style={{ width: "100%" }} />
-                </Card.Body>
-              </Card>
+              <CustomAudioCard
+                image={`http://localhost:8000/${song.image}`}
+                title={song.title}
+                artist={song.artist}
+                audioSrc={`http://localhost:8000/${song.audio}`}
+              />
             </Col>
-          ))
-          
-          }
+          ))}
         </Row>
       )}
     </Container>

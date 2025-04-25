@@ -15,7 +15,7 @@ const OldSongs = () => {
     <section id="oldsongs" className="my-5 px-3">
       <h2 className="mb-4 text-center fw-bold">🎼 OLD SONGS</h2>
 
-      <ul className="list-group text-center">
+      <ul className="list-group">
         {songs.map((song) => (
           <li key={song.id} className="list-group-item">
             <strong>{song.title}</strong> – {song.artist}
