@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "/images/imagesalbum/anh0.jpg",
+        "caption": "Ảnh 1"
+    },
+    {
+        "id": 2,
+        "image": "/images/imagesalbum/anh2.jpg",
+        "caption": "Ảnh 2"
+    },
+    {
+        "id": 3,
+        "image": "/images/imagesalbum/anh3.jpg",
+        "caption": "Ảnh 3"
+    }
+]

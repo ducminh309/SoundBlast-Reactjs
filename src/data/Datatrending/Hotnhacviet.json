@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "Chăm em một đời",
+      "artist": "Đức Phúc",
+      "cover": "images/imagestrending1/chamemmotdoi.jpg",
+      "audio": "audio/audiotrending/chamemmotdoi.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Cưới thôi em",
+      "artist": "Thái Học",
+      "cover": "images/imagestrending1/cuoithoiem.jpg",
+      "audio": "audio/audiotrending/cuoithoiem.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Đừng lo nhé có anh đây",
+      "artist": "Thiên tú",
+      "cover": "images/imagestrending1/dunglonhecoanhday.jpg",
+      "audio": "audio/audiotrending/dunglonhecoanhday.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Ghẹ Mới",
+      "artist": "Huy Tuấn",
+      "cover": "images/imagestrending1/ghemoi.jpg",
+      "audio": "audio/audiotrending/ghemoi.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Hành lý trên tay",
+      "artist": "Kiều Chi",
+      "cover": "images/imagestrending1/hanhlytrentay.jpg",
+      "audio": "audio/audiotrending/hanhlytrentay.mp3"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "I Love YouYou",
+      "artist": "Neil Sedaka",
+      "cover": "images/imagesoldsong/80s1.jpg",
+      "audio": "audio/audiooldsong/cantcant.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Oh! Carol",
+      "artist": "Neil Sedaka",
+      "cover": "images/imagesoldsong/80s2.jpg",
+      "audio": "audio/audiooldsong/canttakemyeyesofyou.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Oh! Carol",
+      "artist": "Neil Sedaka",
+      "cover": "images/imagesoldsong/80s3.jpg",
+      "audio": "audio/audiooldsong/closetoyou.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Oh! Carol",
+      "artist": "Neil Sedaka",
+      "cover": "images/imagesoldsong/80s4.jpg",
+      "audio": "audio/audiooldsong/flymetothemoon.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Oh! Carol",
+      "artist": "Neil Sedaka",
+      "cover": "images/imagesoldsong/80s5.jpg",
+      "audio": "audio/audiooldsong/howdeepisyourlove.mp3"
+    }
+  ]

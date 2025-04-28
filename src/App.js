@@ -31,167 +31,180 @@ import ScrollToTop from "./components/ScrollToTop";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
   
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, [])
-  return (
+  }, []);
 
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        {/* Main site with layout */}
-        <Route
-          path="/"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <MainContent />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/trending"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <TrendingPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/top-charts"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <TopChartsPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/new-releases"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <NewReleasesPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/genres"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <GenresPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/gallery"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <GalleryPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/languages"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <LanguagesPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/latest-albums"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <LatestAlbumsPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/top-artists"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <TopArtistsPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/old-songs"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <OldSongsPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/top-searched"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <TopSearchedPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/reviews"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <ReviewSectionPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/feedback"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <FeedbackPage />
-            </MainLayout>
-          }
-        />
-        <Route
-        path="/site-map"
-        element={
-      <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-        <SiteMapPage />
-    </MainLayout>
-  }
-/>
-        <Route
-          path="/about"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <AboutPage />
-            </MainLayout>
-          }
-        />
-        
-        <Route
-          path="/contact"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <ContactPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/privacy"
-          element={
-            <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <PrivacyPage />
-            </MainLayout>
-          }
-        />
+  // Inline styles for the page
+  const pageStyle = {
+    backgroundColor: isDarkMode ? '#333' : '#E5E4DB',
+    color: isDarkMode ? '#fff' : '#000',
+    minHeight: '100vh', // Ensure the body covers the whole screen
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
+  // Apply the style directly to the body tag
+  useEffect(() => {
+    document.body.style.backgroundColor = isDarkMode ? '#333' : '#E5E4DB';
+    document.body.style.color = isDarkMode ? '#fff' : '#000';
+  }, [isDarkMode]);
+
+  return (
+    <div style={pageStyle}>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          {/* Main site with layout */}
+          <Route
+            path="/"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <MainContent />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/trending"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <TrendingPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/top-charts"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <TopChartsPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/new-releases"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <NewReleasesPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/genres"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <GenresPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/gallery"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <GalleryPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/languages"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <LanguagesPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/latest-albums"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <LatestAlbumsPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/top-artists"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <TopArtistsPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/old-songs"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <OldSongsPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/top-searched"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <TopSearchedPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/reviews"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <ReviewSectionPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/feedback"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <FeedbackPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/site-map"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <SiteMapPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <AboutPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <ContactPage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/privacy"
+            element={
+              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+                <PrivacyPage />
+              </MainLayout>
+            }
+          />
           
-        {/* Auth pages - no layout */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPasswordForm />} />
-        <Route path="/reset-password" element={<ResetPasswordForm />} />
-      </Routes>
-    </Router>
+          {/* Auth pages - no layout */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPasswordForm />} />
+          <Route path="/reset-password" element={<ResetPasswordForm />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "At My Worst",
+      "artist": "Pink Sweat$",
+      "cover": "images/imagestrending/atmyworst.jpg",
+      "audio": "audio/audiotrending1/atmyworst.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Dallen King Dom",
+      "artist": "Gustixa ft. Shalom Margaret",
+      "cover": "images/imagestrending/dallenkingdom.jpg",
+      "audio": "audio/audiotrending1/kingdom.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Death Bed",
+      "artist": "Powfu",
+      "cover": "images/imagestrending/deathbed.jpg",
+      "audio": "audio/audiotrending1/deathbed.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Double Take",
+      "artist": "Dhruv",
+      "cover": "images/imagestrending/doubletake.jpg",
+      "audio": "audio/audiotrending1/doubletake.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Falling In Love",
+      "artist": "NA NGỌC ANH",
+      "cover": "images/imagestrending/fallinginlove.jpg",
+      "audio": "audio/audiotrending1/fallinginlove.mp3"
+    }
+]
