@@ -65,10 +65,46 @@
         "artist": "Đen",
         "audio": "audio/audiotopchar/triuedieunhoxiuxiueulong.mp3"
     },
-        {
+    {
         "image": "images/imagestopchar/vinha.jpg",
         "title": "Vị Nhà",
         "artist": "Đen",
         "audio": "audio/audiotopchar/vinha.mp3"
+    },
+    {
+        "image": "images/imagestopchar/ai.jpg",
+        "title": "Ai",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/ai.mp3"
+    },
+    {
+        "image": "images/imagestopchar/bietrovankhodi.jpg",
+        "title": "Biết Rõ Vẫn Khó Đi",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/bietrovankhodi.mp3"
+    },
+    {
+        "image": "images/imagestopchar/fancuatao.jpg",
+        "title": "Fan Của Tao",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/fancuatao.mp3"
+    },
+    {
+        "image": "images/imagestopchar/lonroi.jpg",
+        "title": "Lớn Rồi",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/lonroi.mp3"
+    },
+    {
+        "image": "images/imagestopchar/dieuthuoccuoi.jpg",
+        "title": "Điều Thuốc Cuối",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/dieuthuoccuoi.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/imlangthoi.jpg",
+        "title": "Im Lặng Thôi",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/imlangthoi.mp3"
     }
 ]

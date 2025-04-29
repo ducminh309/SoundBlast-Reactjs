@@ -9,14 +9,12 @@ const TopChartPage = () => {
   const handlePlay = (index) => {
     const selectedSong = topChartsData[index];
     if (currentSongIndex === index) {
-      // Nếu đang phát bài này thì pause
       if (audioRef.current.paused) {
         audioRef.current.play();
       } else {
         audioRef.current.pause();
       }
     } else {
-      // Phát bài khác
       audioRef.current.src = selectedSong.audio;
       audioRef.current.play();
       setCurrentSongIndex(index);
@@ -35,13 +33,15 @@ const TopChartPage = () => {
           <div key={index} className="song-card">
             <div className="song-image-wrapper">
               <img src={song.image} alt={song.title} className="song-image" />
-              <button className="play-button" onClick={() => handlePlay(index)}>
-                {isPlaying(index) ? '⏸️' : '▶️'}
-              </button>
             </div>
             <div className="song-info">
               <h3 className="song-title">{song.title}</h3>
               <p className="song-artist">{song.artist}</p>
+            </div>
+            <div className="song-controls">
+              <button className="play-button" onClick={() => handlePlay(index)}>
+                {isPlaying(index) ? '⏸️' : '▶️'}
+              </button>
             </div>
             <div className="song-footer">
               <span>01/11</span>
