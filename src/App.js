@@ -8,6 +8,7 @@ import ForgotPasswordForm from "./components/ForgotPasswordForm";
 import ResetPasswordForm from "./components/ResetPasswordForm";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
 
 // Pages
 import TrendingPage from './pages/TrendingPage';
@@ -15,7 +16,7 @@ import TopChartsPage from './pages/TopChartsPage';
 import NewReleasesPage from './pages/NewReleasesPage';
 
 import GenresPage from './pages/GenresPage';
-import GalleryPage from './pages/GalleryPage';
+import Gallery from './pages/GalleryPage';
 import LanguagesPage from './pages/LanguagesPage';
 import LatestAlbumsPage from './pages/LatestAlbumsPage';
 import TopArtistsPage from './pages/TopArtistsPage';
@@ -102,11 +103,7 @@ function App() {
           />
           <Route
             path="/gallery"
-            element={
-              <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-                <GalleryPage />
-              </MainLayout>
-            }
+            element={<Gallery />}
           />
           <Route
             path="/languages"
