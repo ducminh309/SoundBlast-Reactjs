@@ -12,7 +12,7 @@ const GallerySlider = () => {
   }, []);
 
   return (
-    <div className="my-5 px-4">
+    <div className="80p my-5 mx-4">
       <Carousel fade interval={3000} pause={false}>
         {slides.map((slide) => (
           <Carousel.Item key={slide.id}>
