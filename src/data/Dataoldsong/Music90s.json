@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Oh! Carol",
+    "artist": "Neil Sedaka",
+    "cover": "images/imagesoldsong/90s1.jpg",
+    "audio": "audio/audiooldsong/lonely.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Oh! Carol",
+    "artist": "Neil Sedaka",
+    "cover": "images/imagesoldsong/90s2.jpg",
+    "audio": "audio/audiooldsong/Rod Stewart - Blue Moon (from One Night Only! Rod Stewart Live at Royal Albert Hall).mp3"
+  },
+  {
+    "id": 3,
+    "title": "Oh! Carol",
+    "artist": "Neil Sedaka",
+    "cover": "images/imagesoldsong/90s3.jpg",
+    "audio": "audio/audiooldsong/The Foundations - Build Me Up Buttercup (2020 Stereo Mix  Audio).mp3"
+  },
+  {
+    "id": 4,
+    "title": "Oh! Carol",
+    "artist": "Neil Sedaka",
+    "cover": "images/imagesoldsong/90s4.jpg",
+    "audio": "audio/audiooldsong/iloveyou.mp3"
+  },
+  {
+    "id": 5,
+    "title": "Oh! Carol",
+    "artist": "Neil Sedaka",
+    "cover": "images/imagesoldsong/90s5.jpg",
+    "audio": "audio/audiooldsong/iloveyou.mp3"
+  }
+]
+

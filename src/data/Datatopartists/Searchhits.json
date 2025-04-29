@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "title" : "Beautyful In White",
+        "image" : " images/imagestopartists/You Belong With Me - Taylor Swift.jpg",
+        "audio" : "audio/audiotopartists/Shane Filan - Beautiful In White (Official Video).mp3"
+    },
+    {
+        "id" : 2,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Yesterday Once More - The Carpenters.jpg",
+        "audio" : "audio/audiotopartists/Ronan Keating - When You Say Nothing At All.mp3"
+    },
+    {
+        "id" : 3,
+        "title" : "Im Posible  ",
+        "image" : " images/imagestopartists/When You Say Nothing At All - Ronan Keating..jpg",
+        "audio" : "audio/audiotopartists/Ronan Keating - When You Say Nothing At All.mp3"
+    },
+    {
+        "id" : 4,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Thinking Of You - ATC.jpg",
+        "audio" : "audio/audiotopartists/Proud Of You - Fiona Fung (Lyrics & Vietsub).mp3"
+    },
+    {
+        "id" : 5,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/The Day You Went Away - M2M.jpg",
+        "audio" : "audio/audiotopartists/M2M - The Day You Went Away.mp3"
+    },
+    {
+        "id" : 6,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Safe And Sound - Taylor Swift.jpg",
+        "audio" : "audio/audiotopartists/M2M - Pretty Boy.mp3"
+    }
+]

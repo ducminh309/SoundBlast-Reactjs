@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "caption": "Bắc Blingg",
+        "title": "Bắc Blingg",
+        "image": "/images/imagesalbum/bacbling.jpg",
+        "audio": "audio/audioalbum/BẮC BLING ( BẮC NINH )  OFFICIAL MV  HOÀ MINZY ft NS XUÂN HINH x MASEW x TUẤN CRY.mp3"
+    },
+    {
+        "id": 2,
+        "caption": "Cô Nang Xinh Đẹp",
+        "title": "Cô Nang Xinh Đẹp",
+        "image": "/images/imagesalbum/conangxinhdep.png",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id": 3,
+        "caption": "Mất Kết Nối",
+        "title": "Mất Kết Nối",
+        "image": "/images/imagesalbum/matketnoi.jpg",
+        "audio": "audio/audioalbum/Lil Dicky - Molly feat. Brendon Urie (Official Video).mp3"
+    },
+    {
+        "id": 4,
+        "caption": "Mộng Chiều Xuân",
+        "title": "Mộng Chiều Xuân",
+        "image": "/images/imagesalbum/mongchieuxuan.jpg",
+        "audio": "audio/audioalbum/MỘNG CHIỀU XUÂN  Sáng tác- Ngọc Bích  Nhạc Xuân Xưa Trước 1975.mp3"
+    },
+    {
+        "id": 5,
+        "caption": "Sự Nghiệp Chướng",
+        "title": "Sự Nghiệp Chướng",
+        "image": "/images/imagesalbum/Sunghiepchuong.jpg",
+        "audio": "audio/audioalbum/Sự Nghiệp Chướng - PháoCukak Remix Audio Lyrics Video.mp3"
+    },
+    {
+        "id": 6,
+        "caption": "Tái Sinh",
+        "title": "Tái Sinh",
+        "image": "/images/imagesalbum/taisinh.jpg",
+        "audio": "audio/audioalbum/Tùng Dương - TÁI SINH (Tăng Duy Tân x Drum7)  Album Multiverse  Visualizer Video.mp3"
+    }
+]

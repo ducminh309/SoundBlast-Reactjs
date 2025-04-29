@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Họ đâu thương em",
+      "artist": "Phan Duy Anh",
+      "cover": "images/imagestrending1/hodauthuongem.jpg",
+      "audio": "audio/audiotrending/hodauthuongem.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Mất kết nối",
+      "artist": "Dương Domic $ Anh Tú",
+      "cover": "images/imagestrending1/matketnoi1.jpg",
+      "audio": "audio/audiotrending/matketnoi.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Ngày em đi mất",
+      "artist": "Khải Đăng",
+      "cover": "images/imagestrending1/ngaymaiemdimat.jpg",
+      "audio": "audio/audiotrending/ngayemdimat.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Ngoài 30 ",
+      "artist": "Thái Học",
+      "cover": "images/imagestrending1/ngoai30.jpg",
+      "audio": "audio/audiotrending/ngoai30.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Rất lâu rồi mới khóc",
+      "artist": "Minh Vương & Tuấn Phương",
+      "cover": "images/imagestrending1/ratlauroimoikhoc.jpg",
+      "audio": "audio/audiotrending/ratlauroimoikhoc.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Rượu mừng hóa người dưng",
+        "artist": "TLong",
+        "cover": "images/imagestrending1/ruoumunghoanguoidung.jpg",
+        "audio": "audio/audiotrending/ruoumunghoanguoidung.mp3"
+    }
+]

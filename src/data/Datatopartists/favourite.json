@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "title" : "You Belong With Me ",
+        "image" : " images/imagestopartists/You Belong With Me - Taylor Swift.jpg",
+        "audio" : "audio/audiotopartists/Taylor Swift - You Belong With Me.mp3"
+    },
+    {
+        "id" : 2,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/1. Pretty Boy - M2M.jpg",
+        "audio" : "audio/audiotopartists/Carly Rae Jepsen - Call Me Maybe.mp3"
+    },
+    {
+        "id" : 3,
+        "title" : "As Long As You Love Me ",
+        "image" : " images/imagestopartists/As Long As You Love Me - Backstreet Boys.jpg",
+        "audio" : "audio/audiotopartists/Backstreet Boys - As Long As You Love Me (Official HD Video).mp3"
+    },
+    {
+        "id" : 4,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Beautiful In White - Westlife.jpg",
+        "audio" : "audio/audiotopartists/Cry on My Shoulder.mp3"
+    },
+    {
+        "id" : 5,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Beautiful In White - Westlife.jpg",
+        "audio" : "audio/audiotopartists/Glenn Medeiros - Nothing's Gonna Change My Love For You (Official Music Video) [HD].mp3"
+    },
+    {
+        "id" : 6,
+        "title" : ". Love Story ",
+        "image" : " images/imagestopartists/Cry On My Shoulder - Superstars.jpg",
+        "audio" : "audio/audiotopartists/HELLOWEEN - Forever And One (Neverland) (Official Music Video).mp3"
+    }
+]

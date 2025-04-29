@@ -1,0 +1,74 @@
+[
+    {
+        "image": "images/imagestopchar/aimuonnghekhong.jpg",
+        "title": "Ai Muốn Nghe Không",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/aimuonnghekhong.mp3"
+    },
+    {
+        "image": "images/imagestopchar/chotoilangthang.jpg",
+        "title": "Cho Tôi Lang Thang",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/chotoilangthang.mp3"
+    },
+    {
+        "image": "images/imagestopchar/ditheobongmattroi.jpg",
+        "title": "Đi Theo Bóng Mặt Trời",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/ditheobongmattroi.mp3"
+    },
+    {
+        "image": "images/imagestopchar/divenha.jpg",
+        "title": "Đi Về Nhà",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/divenha.mp3"
+    },
+    {
+        "image": "images/imagestopchar/duanhauditron.jpg",
+        "title": "Đưa Nhau Đi Trốn",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/duanhauditron.mp3"
+    },
+    {
+        "image": "images/imagestopchar/haitrieunam.jpg",
+        "title": "Hai Triệu Năm",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/haitrieunam.mp3"
+    },
+    {
+        "image": "images/imagestopchar/luonyeudoi.jpg",
+        "title": "Luôn Yêu Đời",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/luonyeudoi.mp3"
+    },
+    {
+        "image": "images/imagestopchar/mo.jpg",
+        "title": "Mơ",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/mo.mp3"
+    },
+    {
+        "image": "images/imagestopchar/momat.jpg",
+        "title": "Mở Mắt",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/momat.mp3"
+    },
+    {
+        "image": "images/imagestopchar/nhaccuarung.jpg",
+        "title": "Nhạc Của Rừng",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/nhaccuarung.mp3"
+    },
+    {
+        "image": "images/imagestopchar/trieudieunhoxiuxieulong.jpg",
+        "title": "Triệu Điều Nhỏ Xíu Xiêu Lòng",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/triuedieunhoxiuxiueulong.mp3"
+    },
+        {
+        "image": "images/imagestopchar/vinha.jpg",
+        "title": "Vị Nhà",
+        "artist": "Đen",
+        "audio": "audio/audiotopchar/vinha.mp3"
+    }
+]

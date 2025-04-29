@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Havana",
+        "artist": "Camila Cabello",
+        "cover": "images/imagestrending/havana.jpg",
+        "audio": "audio/audiotrending1/havana.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Kiss Me More",
+        "artist": "Doja Cat",
+        "cover": "images/imagestrending/kissmemore.jpg",
+        "audio": "audio/audiotrending1/kissmemore.mp3"
+    },
+    {
+        "id": 3,
+        "title": "Lemon Tree",
+        "artist": "Fools Garden ",
+        "cover": "images/imagestrending/lemontree.jpg",
+        "audio": "audio/audiotrending1/lemontree.mp3"
+    },
+    {
+        "id": 4,
+        "title": "Let Me Down",
+        "artist": "Alec Benjamin",
+        "cover": "images/imagestrending/letmedown.jpg",
+        "audio": "audio/audiotrending1/letmedown.mp3"
+    },
+    {
+        "id": 5,
+        "title": "Play Date",
+        "artist": "Melanie Martinez",
+        "cover": "images/imagestrending/playdate.jpg",
+        "audio": "audio/audiotrending1/playdate.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Sen My Love",
+        "artist": "Adele",
+        "cover": "images/imagestrending/senmylove.jpg",
+        "audio": "audio/audiotrending1/senmylove.mp3"
+    }
+]

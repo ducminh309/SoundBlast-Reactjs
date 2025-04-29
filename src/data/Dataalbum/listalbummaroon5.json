@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "title":"One More Night",
+        "duration":"03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id":2,
+        "title":"Suger",
+        "duration":"03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id":3,
+        "title":"This Love",
+        "duration":"03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id":4,
+        "title":"Maps",
+        "duration":"03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    }
+]

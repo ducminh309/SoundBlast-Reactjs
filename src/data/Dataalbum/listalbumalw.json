@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Faded",
+        "duration": "03.44",
+        "audio": "/audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Alone",
+        "duration": "03.44",
+        "audio": "/audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id": 3,
+        "title": "Sky",
+        "duration": "03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    },
+    {
+        "id": 4,
+        "title": "On My Way",
+        "duration": "03.44",
+        "audio": "audio/audioalbum/Alan Walker _ Alex Skrindo - Sky.mp3"
+    }
+]
+  
