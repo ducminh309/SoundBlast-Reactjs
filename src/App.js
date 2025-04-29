@@ -15,7 +15,7 @@ import TopChartsPage from './pages/TopChartsPage';
 import NewReleasesPage from './pages/NewReleasesPage';
 
 import GenresPage from './pages/GenresPage';
-import GalleryPage from './pages/GalleryPage';
+import Gallery from './pages/GalleryPage';
 import LanguagesPage from './pages/LanguagesPage';
 import LatestAlbumsPage from './pages/LatestAlbumsPage';
 import TopArtistsPage from './pages/TopArtistsPage';
@@ -91,7 +91,7 @@ function App() {
           path="/gallery"
           element={
             <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-              <GalleryPage />
+              <Gallery />
             </MainLayout>
           }
         />
