@@ -1,3 +1,5 @@
+import CustomNavbar from '../components/CustomNavbar';
+import Footer from '../components/Footer';
 import gallery from '../data/images.json';
 import { useState } from 'react';
 
@@ -11,18 +13,22 @@ function Gallery() {
     const MakeInvisible = () => {
         setVisibility(null);
     };
-    // Function for showing an image
-    return <div className='gallery'>
-        {/* Mapping image links */}
-        {gallery.map((images) => {
-            return <img src={images.image} className='gallery-image' onClick={() => MakeVisible(images.image)}></img>
-        })}
+    return <div>
+        <CustomNavbar />
+        {/* Gallery */}
+        <div className='gallery'>
+            {/* Mapping image links */}
+            {gallery.map((images) => {
+                return <img src={images.image} className='gallery-image' onClick={() => MakeVisible(images.image)}></img>
+            })}
 
-        {/* And operand for showing image */}
-        {Image && (<div className='viewer'>
-            <img className='image' src={Image}></img>
-            <button className='close' onClick={MakeInvisible}><h1>X</h1></button>
-        </div>)}
+            {/* And operand for showing image */}
+            {Image && (<div className='viewer'>
+                <img className='image' src={Image}></img>
+                <button className='close' onClick={MakeInvisible}><h1>X</h1></button>
+            </div>)}
+        </div>
+        <Footer />
     </div>
 }
 

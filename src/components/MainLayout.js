@@ -11,10 +11,14 @@ const MainLayout = ({ children, toggleTheme, isDarkMode }) => {
 
   return (
     <div style={{ backgroundColor, color: textColor, minHeight: "100vh" }}>
+      <div className="top">
+        <CustomNavbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      </div>
       {/* Only show slider on homepage */}
       {location.pathname === "/" && <GallerySlider />}
-      <CustomNavbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      {children}
+      <div className="padding">
+        {children}
+      </div>
       <Footer />
     </div>
   );

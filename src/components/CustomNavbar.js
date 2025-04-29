@@ -27,7 +27,6 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
   className="shadow-sm py-2"
   bg={isDarkMode ? "dark" : "light"}
   variant={isDarkMode ? "dark" : "light"}
-  fixed="top"
 >
   <Container fluid className="px-4"> {/* <-- fluid + custom padding */}
     {/* Logo */}
