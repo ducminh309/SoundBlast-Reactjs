@@ -14,7 +14,7 @@ import FeedbackForm from './sections/FeedbackForm';
 
 const MainContent = () => {
   return (
-    <main className="py-4 px-3 container">
+    <main className="px-3 container">
       <TrendingNow />
       <TopCharts />
       <NewReleases />
