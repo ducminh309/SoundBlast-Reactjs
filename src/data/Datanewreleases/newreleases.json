@@ -1,0 +1,85 @@
+[
+      {
+        "id": 1,
+        "title": "Breathe",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/breathe.mp3",
+        "image": "images/imagesnewreleases/breathe.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Closer",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/closer.mp3",
+        "image": "images/imagesnewreleases/closer.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Dynasty",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/dynasty.mp3",
+        "image": "images/imagesnewreleases/dynasty.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Happy For You",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/happyforyou.mp3",
+        "image": "images/imagesnewreleases/happyforyou.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Le luu ly",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/leluuly.mp3",
+        "image": "images/imagesnewreleases/leluuly.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Making My Way",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/makingmyway.mp3",
+        "image": "images/imagesnewreleases/makingmyway.jpg"
+      },
+      {
+        "id": 7,
+        "title": "One Right Now",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/onerightnow.mp3",
+        "image": "images/imagesnewreleases/onerightnow.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Shape Of You",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/shapeofyou.mp3",
+        "image": "images/imagesnewreleases/shapeofyou.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Symphony",
+        "artist": "Unknown Artist",
+        "category": "Trending",
+        "duration": "03:40",
+        "audio": "audio/audionewreleases/symphony.mp3",
+        "image": "images/imagesnewreleases/symphony.jpg"
+      }
+    
+]
+  
