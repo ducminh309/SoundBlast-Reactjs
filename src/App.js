@@ -32,6 +32,7 @@ import SiteMapPage from "./pages/SiteMapPage";
 import ScrollToTop from "./components/ScrollToTop";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SearchResultPage from "./components/SearchResultPage";
 
 import './App.css';
 
@@ -48,6 +49,7 @@ function App() {
 <div>
 <Router>
       <ScrollToTop />
+      
       <Routes>
         {/* Main site with layout */}
         <Route
@@ -58,6 +60,7 @@ function App() {
             </MainLayout>
           }
         />
+        <Route path="/search" element={<SearchResultPage />} />
         <Route
           path="/trending"
           element={
@@ -157,9 +160,9 @@ function App() {
         <Route
         path="/site-map"
         element={
-      <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
-        <SiteMapPage />
-    </MainLayout>
+          <MainLayout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+            <SiteMapPage />
+          </MainLayout>
   }
 />
         <Route

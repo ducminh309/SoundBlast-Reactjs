@@ -5,11 +5,11 @@ import {
   Container,
   Form,
   Button,
-  FormControl,
   NavDropdown,
   Image,
 } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import SearchBar from "./SearchBar";
 
 const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
   const [visitors, setVisitors] = useState(0);
@@ -73,17 +73,9 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
   {/* RIGHT SECTION: Search + Theme + Visitors + Login */}
   <div className="d-flex align-items-center gap-3 ms-auto">
     {/* Search */}
-    <Form className="d-flex align-items-center">
-    <FormControl
-      type="search"
-      placeholder="Enter song name"
-      className="me-2"
-      aria-label="Search"
-      style={{ width: "320px", height: "38px" }} // <-- kéo dài ô
-    />
-      <Button variant="danger" style={{ height: "38px" }}>
-        Search
-      </Button>
+   
+    <Form >
+    <SearchBar />
     </Form>
 
     {/* Theme Toggle */}

@@ -37,7 +37,16 @@ const CustomAudioCard = ({ image, title, artist, audioSrc }) => {
 
   return (
     <Card className="mb-4 shadow-sm">
-      <Card.Img variant="top" src={image} style={{ height: "220px", objectFit: "cover" }} />
+      <div className="img-wrapper position-relative">
+  <Card.Img
+    variant="top"
+    src={image}
+    style={{ height: "220px", objectFit: "cover" }}
+  />
+  <div className="img-overlay">
+    <span className="overlay-text">🔥 {title}</span>
+  </div>
+</div>
       <Card.Body className="text-center">
         <Card.Title>{title}</Card.Title>
         <Card.Text className="text-muted">{artist}</Card.Text>
@@ -54,8 +63,14 @@ const CustomAudioCard = ({ image, title, artist, audioSrc }) => {
           className="my-2"
         />
         <div style={{ fontSize: "0.9rem" }}>{formatTime(currentTime)} / {formatTime(duration)}</div>
-
-        <audio ref={audioRef} src={audioSrc} />
+        <audio
+          ref={audioRef}
+          src={audioSrc}
+          preload="auto"
+          onLoadedMetadata={() => setDuration(audioRef.current.duration)}
+          onTimeUpdate={() => setCurrentTime(audioRef.current.currentTime)}
+          hidden
+          />
       </Card.Body>
     </Card>
   );

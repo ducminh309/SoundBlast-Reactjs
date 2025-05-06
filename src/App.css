@@ -1,9 +1,10 @@
 
-
-  body {
-    margin: 0;
-    min-height: 100vh;
+body {
+  background-color: #E5E4DB;
+  margin: 0;
+  min-height: 100vh;
 }
+
 
 .gallery {
     
@@ -54,4 +55,33 @@
 .padding {
     padding-top: 80px;
 }
+.img-wrapper {
+    position: relative;
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .img-wrapper:hover .img-overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
 
