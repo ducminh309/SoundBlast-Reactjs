@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./TrendingPage.css";
+import styles from "./TrendingPage.module.css";
+
 import hotNhacVietData from "../data/Datatrending/Hotnhacviet.json";
 import nhacAuMyData from "../data/Datatrending/Nhacaumy.json";
 import topNhacAuMyData from "../data/Datatrending/Topnhacaumy.json";
@@ -13,93 +14,96 @@ const TrendingPage = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col album-col">
-          <div className="top-music-container">
-            <h3 className="section-title">Trending now</h3>
-            <h4 className="sub-title">Top nhạc Việt</h4>
-            <div className="album-list">
+    <div className={styles.container}>
+      <div className={styles.row}>
+        <div className={`${styles.col} ${styles.albumCol}`}>
+          <div className={styles.topMusicContainer}>
+            <h3 className={styles.sectionTitle}>Trending now</h3>
+            <h4 className={styles.subTitle}>Top nhạc Việt</h4>
+            <div className={styles.albumList}>
               {hotNhacVietData.map((item) => (
                 <div
-                  className="album-item"
+                  className={styles.albumItem}
                   key={item.id}
                   onClick={() => playSong(item.audio)}
                 >
                   <img src={`/${item.cover}`} alt={item.title} />
-                  <p className="title">{item.title}</p>
-                  <p className="artist">{item.artist}</p>
+                  <p className={styles.title}>{item.title}</p>
+                  <p className={styles.artist}>{item.artist}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="col list-col">
-          <div className="hot-songs-container">
-            <h2 className="section-title">Hot Song's</h2>
-            <div className="hot-songs-grid">
+        <div className={`${styles.col} ${styles.listCol}`}>
+          <div className={styles.hotSongsContainer}>
+            <h2 className={styles.sectionTitle}>Hot Song's</h2>
+            <div className={styles.hotSongsGrid}>
               {topNhacVietData.map((song) => (
                 <div
-                  className="song-item"
+                  className={styles.songItem}
                   key={song.id}
                   onClick={() => playSong(song.audio)}
                 >
-                  <img src={`/${song.cover}`} alt={song.title} className="song-cover" />
-                  <div className="song-info">
-                    <h4 className="song-title">{song.title}</h4>
-                    <p className="song-artist">{song.artist}</p>
+                  <img src={`/${song.cover}`} alt={song.title} className={styles.songCover} />
+                  <div className={styles.songInfo}>
+                    <h4 className={styles.songTitle}>{song.title}</h4>
+                    <p className={styles.songArtist}>{song.artist}</p>
                   </div>
-                  <span className="song-duration">03:40</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div> 
-      <div className="row">
-        <div className="col album-col">
-          <div className="top-music-container">
-            <h3 className="section-title">Hot Song's</h3>
-            <div className="album-list">
-              {topNhacAuMyData.map((item) => (
-                <div
-                  className="album-item"
-                  key={item.id}
-                  onClick={() => playSong(item.audio)}
-                >
-                  <img src={`/${item.cover}`} alt={item.title} />
-                  <p className="title">{item.title}</p>
-                  <p className="artist">{item.artist}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="col list-col">
-          <div className="hot-songs-container">
-            <h2 className="section-title">Hot Song's</h2>
-            <div className="hot-songs-grid">
-              {nhacAuMyData.map((song) => (
-                <div
-                  className="song-item"
-                  key={song.id}
-                  onClick={() => playSong(song.audio)}
-                >
-                  <img src={`/${song.cover}`} alt={song.title} className="song-cover" />
-                  <div className="song-info">
-                    <h4 className="song-title">{song.title}</h4>
-                    <p className="song-artist">{song.artist}</p>
-                  </div>
-                  <span className="song-duration">03:40</span>
+                  <span className={styles.songDuration}>03:40</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </div>
+
+      <div className={styles.row}>
+        <div className={`${styles.col} ${styles.albumCol}`}>
+          <div className={styles.topMusicContainer}>
+            <h3 className={styles.sectionTitle}>Hot Song's</h3>
+            <div className={styles.albumList}>
+              {topNhacAuMyData.map((item) => (
+                <div
+                  className={styles.albumItem}
+                  key={item.id}
+                  onClick={() => playSong(item.audio)}
+                >
+                  <img src={`/${item.cover}`} alt={item.title} />
+                  <p className={styles.title}>{item.title}</p>
+                  <p className={styles.artist}>{item.artist}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.col} ${styles.listCol}`}>
+          <div className={styles.hotSongsContainer}>
+            <h2 className={styles.sectionTitle}>Hot Song's</h2>
+            <div className={styles.hotSongsGrid}>
+              {nhacAuMyData.map((song) => (
+                <div
+                  className={styles.songItem}
+                  key={song.id}
+                  onClick={() => playSong(song.audio)}
+                >
+                  <img src={`/${song.cover}`} alt={song.title} className={styles.songCover} />
+                  <div className={styles.songInfo}>
+                    <h4 className={styles.songTitle}>{song.title}</h4>
+                    <p className={styles.songArtist}>{song.artist}</p>
+                  </div>
+                  <span className={styles.songDuration}>03:40</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {currentSong && (
-        <div className="audio-player">
+        <div className={styles.audioPlayer}>
           <audio controls autoPlay src={`/${currentSong}`}>
             Your browser does not support the audio element.
           </audio>
@@ -108,4 +112,5 @@ const TrendingPage = () => {
     </div>
   );
 };
+
 export default TrendingPage;

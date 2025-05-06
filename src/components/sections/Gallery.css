@@ -15,7 +15,7 @@
 }
 
 .gallery-container:hover .gallery-track {
-  animation-play-state: paused; /* Dừng khi hover */
+  animation-play-state: paused;
 }
 
 .gallery-item {
@@ -26,7 +26,7 @@
 }
 
 .gallery-item:hover {
-  transform: scale(1.05); /* Zoom nhẹ khi hover */
+  transform: scale(1.05);
 }
 
 .gallery-item img {
@@ -38,7 +38,7 @@
 }
 
 .gallery-item:hover img {
-  filter: brightness(1.1); /* Sáng lên khi hover */
+  filter: brightness(1.1);
 }
 
 .gallery-caption {

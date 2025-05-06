@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './TopChartPage.css';
+import styles from './TopChartPage.module.css';
 import topChartsData from '../data/Datatopchar/topchar.json';
 
 const TopChartPage = () => {
@@ -9,11 +9,7 @@ const TopChartPage = () => {
   const handlePlay = (index) => {
     const selectedSong = topChartsData[index];
     if (currentSongIndex === index) {
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
+      audioRef.current.paused ? audioRef.current.play() : audioRef.current.pause();
     } else {
       audioRef.current.src = selectedSong.audio;
       audioRef.current.play();
@@ -21,29 +17,27 @@ const TopChartPage = () => {
     }
   };
 
-  const isPlaying = (index) => {
-    return currentSongIndex === index && !audioRef.current.paused;
-  };
+  const isPlaying = (index) => currentSongIndex === index && !audioRef.current.paused;
 
   return (
-    <div className="top-chart-container">
-      <h2 className="title">Top charts</h2>
-      <div className="songs-grid">
+    <div className={styles.topChartContainer}>
+      <h2 className={styles.title}>Top charts</h2>
+      <div className={styles.songsGrid}>
         {topChartsData.map((song, index) => (
-          <div key={index} className="song-card">
-            <div className="song-image-wrapper">
-              <img src={song.image} alt={song.title} className="song-image" />
+          <div key={index} className={styles.songCard}>
+            <div className={styles.songImageWrapper}>
+              <img src={song.image} alt={song.title} className={styles.songImage} />
             </div>
-            <div className="song-info">
-              <h3 className="song-title">{song.title}</h3>
-              <p className="song-artist">{song.artist}</p>
+            <div className={styles.songInfo}>
+              <h3 className={styles.songTitle}>{song.title}</h3>
+              <p className={styles.songArtist}>{song.artist}</p>
             </div>
-            <div className="song-controls">
-              <button className="play-button" onClick={() => handlePlay(index)}>
+            <div className={styles.songControls}>
+              <button className={styles.playButton} onClick={() => handlePlay(index)}>
                 {isPlaying(index) ? '⏸️' : '▶️'}
               </button>
             </div>
-            <div className="song-footer">
+            <div className={styles.songFooter}>
               <span>01/11</span>
               <span>411</span>
             </div>

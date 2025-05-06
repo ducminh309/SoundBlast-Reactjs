@@ -1,35 +1,34 @@
-.top-artists-page {
+.topArtistsPage {
     background-color: #f0eee8;
     padding: 20px;
     min-height: 100vh;
-}
-
-.main-title {
+  }
+  
+  .mainTitle {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-}
-
-.section {
+  }
+  
+  .section {
     margin-bottom: 40px;
-}
-
-.section-title {
+  }
+  
+  .sectionTitle {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.cards-container {
+  }
+  
+  .cardsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     justify-items: center;
-}
-
-
-.card {
+  }
+  
+  .card {
     background-color: white;
     border: none;
     border-radius: 12px;
@@ -38,32 +37,33 @@
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-image {
+  }
+  
+  .cardImage {
     width: 100%;
     height: 120px;
     object-fit: cover;
     border-bottom: 1px solid #ddd;
-}
-
-.card-title {
+  }
+  
+  .cardTitle {
     padding: 8px;
     font-size: 14px;
     font-weight: 500;
     color: #333;
-}
-
-.audio-player {
+  }
+  
+  .audioPlayer {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
     z-index: 999;
-}
+  }
+  

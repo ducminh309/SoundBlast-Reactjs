@@ -1,0 +1,121 @@
+.carouselItemImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hotSongsContainer {
+  padding: 0 20px;
+}
+
+.hotSongItem {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.hotSongItem:hover {
+  background: #f9f9f9;
+  transform: translateY(-3px);
+}
+
+.songThumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.songTitle {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.audioPlayer {
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.songDuration {
+  font-size: 14px;
+  color: #666;
+}
+
+.albumContainer {
+  background: #ece7e7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.albumContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.albumCover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.albumInfo h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.songTable {
+  width: 100%;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.songTable th,
+.songTable td {
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.songTable thead tr {
+  border-bottom: 2px solid #ccc;
+}
+
+.songTable tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.songTable tbody tr:hover {
+  background: #f2f2f2;
+}
+
+.playButton {
+  width: 100%;
+  background-color: #ff914d;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.playButton:hover {
+  background-color: #ff5722;
+  transform: translateY(-2px);
+}
