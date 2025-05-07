@@ -106,5 +106,17 @@
         "title": "Im Lặng Thôi",
         "artist": "DSK",
         "audio": "audio/audiotopchar/imlangthoi.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/ngaytan.jpg",
+        "title": "Ngày tàn",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/ngaytan.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/hoc.jpg",
+        "title": "Học",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/hoc.mp3"
     }
 ]

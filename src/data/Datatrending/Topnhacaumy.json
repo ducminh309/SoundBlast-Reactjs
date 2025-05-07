@@ -33,5 +33,12 @@
       "artist": "NA NGỌC ANH",
       "cover": "images/imagestrending/fallinginlove.jpg",
       "audio": "audio/audiotrending1/fallinginlove.mp3"
+    },
+    {
+      "id": 6,
+      "title": "Waiting For Love",
+      "artist": "Avicii",
+      "cover": "images/imagestrending/waitingforlove.jpg",
+      "audio": "audio/audiotrending1/waitingforlove.mp3"
     }
 ]

@@ -36,9 +36,9 @@
 
 .songItem {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: white;
-  padding: 10px 15px;
+  padding: 15px;
   border-radius: 12px;
   width: 48%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -49,6 +49,12 @@
 .songItem:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.songItem .songContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .songCover {
@@ -81,6 +87,7 @@
   color: #aaa;
   position: absolute;
   right: 15px;
+  top: 15px;
 }
 
 /* Album List Grid */
@@ -105,14 +112,14 @@
 }
 
 .albumItem {
-  width: 160px;
+  width: 250px;
+  height: auto;
   background-color: #ece7e7;
   border-radius: 10px;
   overflow: hidden;
   padding: 12px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
 }
 
 .albumItem:hover {
@@ -140,3 +147,9 @@
   color: #666;
 }
 
+/* Audio player in each item */
+.audioPlayerItem {
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+}

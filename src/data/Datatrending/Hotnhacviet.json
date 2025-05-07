@@ -33,5 +33,12 @@
       "artist": "Kiều Chi",
       "cover": "images/imagestrending1/hanhlytrentay.jpg",
       "audio": "audio/audiotrending/hanhlytrentay.mp3"
+    },
+    {
+      "id": 6,
+      "title": "Tám Vạn Sáu Ngàn Thương",
+      "artist": "Hạo Thiên",
+      "cover": "images/imagestrending1/tamvansaunganthuong.jpg",
+      "audio": "audio/audiotrending/tamvansaunganthuong.mp3"
     }
 ]
