@@ -17,7 +17,7 @@ const SearchBar = () => {
       <input
       type="search"
       placeholder="Enter song name"
-      className="me-2"
+      className="border-10px; me-2"
       aria-label="Search"
       style={{ width: "320px", height: "38px"}}
       value={query}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaArrowUp } from 'react-icons/fa';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -14,10 +14,9 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-dark text-white pt-4 pb-2 position-relative">
+    <footer className="bg-dark text-white pt-4 pb-2 position-relative" style={{ zIndex: 2 }}>
       <div className="container">
         <div className="row text-center text-md-start">
-
           {/* Column 1: Brand Info */}
           <div className="col-md-4 mb-4">
             <div className="text-center">
@@ -38,10 +37,10 @@ const Footer = () => {
               📧 support@soundblast.com
             </p>
             <div className="text-center">
-            <Link to="/about" className="text-info text-decoration-none mx-2">About Us</Link> |
-            <Link to="/contact" className="text-info text-decoration-none mx-2">Contact</Link> |
-            <Link to="/privacy" className="text-info text-decoration-none mx-2">Privacy</Link> |
-            <Link to="/site-map" className="text-info text-decoration-none mx-2">Site Map</Link>
+              <Link to="/about" className="text-info text-decoration-none mx-2">About Us</Link> |
+              <Link to="/contact" className="text-info text-decoration-none mx-2">Contact</Link> |
+              <Link to="/privacy" className="text-info text-decoration-none mx-2">Privacy</Link> |
+              <Link to="/site-map" className="text-info text-decoration-none mx-2">Site Map</Link>
             </div>
           </div>
 
@@ -71,12 +70,17 @@ const Footer = () => {
               <button type="submit" className="btn btn-info w-100">Subscribe</button>
             </form>
             <div className="mt-4">
-              <a href="#"><FaFacebook className="text-info mx-2" size={20} /></a>
-              <a href="#"><FaTwitter className="text-info mx-2" size={20} /></a>
-              <a href="#"><FaInstagram className="text-info mx-2" size={20} /></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="text-info mx-2" size={20} />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="text-info mx-2" size={20} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-info mx-2" size={20} />
+              </a>
             </div>
           </div>
-
         </div>
 
         {/* Ticker */}
@@ -93,7 +97,7 @@ const Footer = () => {
           </span>
         </div>
 
-        <p className="mt-3 mb-0 small text-muted text-center">&copy; 2025 SoundBlast. All rights reserved.</p>
+        <p className="mt-3 mb-0 small text-muted text-center">© 2025 SoundBlast. All rights reserved.</p>
       </div>
 
       {/* Scroll to Top */}
