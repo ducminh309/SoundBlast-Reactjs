@@ -1,121 +1,124 @@
-.carouselItemImg {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+.musicWrapper {
+  background-color: #fafafa;
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
   border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.hotSongsContainer {
-  padding: 0 20px;
+.sectionTitle {
+  background-color: #222;
+  color: #fff;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  letter-spacing: 1px;
 }
 
-.hotSongItem {
-  background: white;
-  border-radius: 12px;
-  padding: 15px 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: 0.3s;
+.musicItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-direction: column; /* Ensure everything is stacked vertically */
+}
+
+.musicItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   width: 100%;
 }
 
-.hotSongItem:hover {
-  background: #f9f9f9;
-  transform: translateY(-3px);
-}
-
-.songThumbnail {
-  width: 50px;
-  height: 50px;
+.cover {
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.songTitle {
-  font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 5px;
+.cover:hover {
+  transform: scale(1.05);
 }
 
-.audioPlayer {
-  width: 200px;
-  height: 30px;
-  margin-top: 5px;
-}
-
-.songDuration {
+.info p {
+  margin: 2px 0;
   font-size: 14px;
-  color: #666;
-}
-
-.albumContainer {
-  background: #ece7e7;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-  transition: 0.3s;
-  width: 100%;
-}
-
-.albumContainer:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-}
-
-.albumCover {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 20px;
-}
-
-.albumInfo h3 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.songTable {
-  width: 100%;
-  margin-bottom: 15px;
-  border-collapse: collapse;
-}
-
-.songTable th,
-.songTable td {
-  padding: 10px;
-  font-size: 15px;
   color: #333;
 }
 
-.songTable thead tr {
-  border-bottom: 2px solid #ccc;
+.info strong {
+  color: #555;
 }
 
-.songTable tbody tr {
-  border-bottom: 1px solid #ddd;
-}
-
-.songTable tbody tr:hover {
-  background: #f2f2f2;
-}
-
-.playButton {
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
   width: 100%;
-  background-color: #ff914d;
-  color: white;
-  padding: 12px 0;
-  border: none;
-  border-radius: 30px;
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px; /* Add space to separate the play button from text */
 }
 
-.playButton:hover {
-  background-color: #ff5722;
-  transform: translateY(-2px);
+.playBtn {
+  border: none;
+  background: #e5e4db;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playBtn:hover {
+  background-color: #e5e4db;
+  transform: scale(1.05);
+}
+
+span {
+  font-size: 13px;
+  color: #555;
+}
+
+.textDescription {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.musicItem.expanded .right {
+  flex-direction: column; /* Stack the play button and duration below the description */
+  align-items: flex-start; /* Align them to the left */
+}
+
+.musicItem.expanded .playBtn {
+  margin-top: 10px; /* Add margin between text description and play button */
+}
+
+.musicItem.expanded .textDescription {
+  margin-bottom: 10px; /* Add margin between text description and play button */
 }
