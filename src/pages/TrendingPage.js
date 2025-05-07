@@ -46,7 +46,6 @@ const TrendingPage = () => {
                       <h4 className={styles.songTitle}>{song.title}</h4>
                       <p className={styles.songArtist}>{song.artist}</p>
                     </div>
-                    <span className={styles.songDuration}>03:40</span>
                   </div>
                   <audio controls className={styles.audioPlayerItem}>
                     <source src={`/${song.audio}`} type="audio/mpeg" />
@@ -70,7 +69,7 @@ const TrendingPage = () => {
                   <p className={styles.title}>{item.title}</p>
                   <p className={styles.artist}>{item.artist}</p>
                   <audio controls className={styles.audioPlayerItem}>
-                    <source src={`/${item.audio}`} type="audio/mpeg" />
+                    <source src={`/${item.audio}`} type="audio/mp3" />
                     Trình duyệt của bạn không hỗ trợ audio.
                   </audio>
                 </div>
@@ -95,7 +94,6 @@ const TrendingPage = () => {
                       <h4 className={styles.songTitle}>{song.title}</h4>
                       <p className={styles.songArtist}>{song.artist}</p>
                     </div>
-                    <span className={styles.songDuration}>03:40</span>
                   </div>
                   <audio controls className={styles.audioPlayerItem}>
                     <source src={`/${song.audio}`} type="audio/mpeg" />

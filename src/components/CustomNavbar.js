@@ -35,8 +35,7 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
     <BootstrapNavbar
       expand="lg"
       className="shadow-sm py-2"
-      bg={isDarkMode ? "dark" : "light"}
-      variant={isDarkMode ? "dark" : "light"}
+      style={{ backgroundColor: "#e5e4db" }} // Màu nền navbar là #e5e4db
     >
       <Container fluid className="px-4">
         {/* Logo */}
@@ -116,11 +115,11 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
               </NavDropdown>
             ) : (
               <div className="d-flex gap-2">
-                <Button size="sm" variant="primary">
-                  <Link className="nav-link text-white" to="/login">Login</Link>
+                <Button size="sm" variant="light">
+                  <Link className="nav-link text-black" to="/login">Login</Link>
                 </Button>
-                <Button size="sm" variant="warning">
-                  <Link className="nav-link text-dark" to="/register">Register</Link>
+                <Button size="sm" variant="dark">
+                  <Link className="nav-link text-light" to="/register">Register</Link>
                 </Button>
               </div>
             )}
@@ -130,5 +129,4 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
     </BootstrapNavbar>
   );
 };
-
 export default CustomNavbar;

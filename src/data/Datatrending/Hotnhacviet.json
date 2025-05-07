@@ -40,5 +40,19 @@
       "artist": "Hạo Thiên",
       "cover": "images/imagestrending1/tamvansaunganthuong.jpg",
       "audio": "audio/audiotrending/tamvansaunganthuong.mp3"
+    },
+    {
+      "id": 7,
+      "title": "Sống Cho Hết Đời Thanh Xuân",
+      "artist": "Hạo Thiên",
+      "cover": "images/imagestrending1/songchohetdoithanhxuan.jpg",
+      "audio": "audio/audiotrending/songchohetdoithanhxuan.mp3"
+    },
+    {
+      "id": 8,
+      "title": "Trước Khi Tuổi Trẻ Này Đóng Lối",
+      "artist": "Hạo Thiên",
+      "cover": "images/imagestrending1/truockhituoitrenaydongloi.jpg",
+      "audio": "audio/audiotrending/truockhituoitrenaydongloi.mp3"
     }
 ]

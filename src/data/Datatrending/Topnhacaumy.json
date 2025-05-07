@@ -40,5 +40,19 @@
       "artist": "Avicii",
       "cover": "images/imagestrending/waitingforlove.jpg",
       "audio": "audio/audiotrending1/waitingforlove.mp3"
+    },
+    {
+      "id": 7,
+      "title": "Way Back Home",
+      "artist": "Avicii",
+      "cover": "images/imagestrending/waybackhome.jpg",
+      "audio": "audio/audiotrending1/waybackhome.mp3"
+    },
+    {
+      "id": 8,
+      "title": "Sent It",
+      "artist": "Avicii",
+      "cover": "images/imagestrending/sentit.jpg",
+      "audio": "audio/audiotrending1/sentit.mp3"
     }
 ]

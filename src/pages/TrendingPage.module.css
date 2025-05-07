@@ -1,88 +1,93 @@
+/* Container chính */
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* Flex row & col */
 .row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .col {
   width: 100%;
 }
 
-.hotSongsContainer {
-  padding: 24px;
-  background-color: #e5e4db;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* Section chung */
+.sectionTitle {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #2c2c2c;
 }
 
-.sectionTitle {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
+/* HOT SONGS */
+.hotSongsContainer {
+  background-color: #f3f2ed;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 .hotSongsGrid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .songItem {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 15px;
-  border-radius: 12px;
-  width: 48%;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  width: calc(50% - 10px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  gap: 10px;
 }
 
 .songItem:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .songCover {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 140px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 8px;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
+/* Thông tin bài hát */
 .songInfo {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .songTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
   margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  color: #111;
 }
 
 .songArtist {
-  margin: 0;
-  color: #666;
   font-size: 14px;
+  color: #666;
+  margin: 0;
 }
 
 .songDuration {
   font-size: 13px;
-  color: #aaa;
-  align-self: flex-end;
+  color: #999;
+  text-align: right;
 }
 
 .audioPlayerInline {
@@ -90,68 +95,95 @@
   width: 100%;
 }
 
+/* TOP MUSIC */
 .topMusicContainer {
-  padding: 24px;
-  border-radius: 12px;
+  padding: 32px;
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .subTitle {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #000000;
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
+/* Danh sách album */
 .albumList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 150px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 40px;
+  justify-items: center;
 }
 
+/* Từng album */
 .albumItem {
-  width: 250px;
-  height: 390px;
-  background-color: #ece7e7;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 12px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
+  background-color: #f4f4f4;
+  border-radius: 14px;
+  padding: 16px;
+  width: 100%;
+  max-width: 240px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .albumItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .albumItem img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 14px;
 }
 
 .title {
+  font-size: 17px;
   font-weight: 600;
-  font-size: 16px;
   color: #222;
-  margin: 6px 0;
+  margin: 8px 0;
 }
 
 .artist {
   font-size: 14px;
   color: #666;
+  margin-bottom: 10px;
 }
 
 .albumAudio {
-  margin-top: 8px;
   width: 100%;
+  margin-top: 10px;
 }
 
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .songItem {
+    width: 100%;
+  }
+
+  .albumList {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 30px;
+  }
+
+  .albumItem {
+    height: auto;
+  }
+.audio {
+  transform: scale(0.9); /* hoặc 0.8 tùy độ nhỏ bạn muốn */
+  transform-origin: left center;
+  width: 100%;
+  max-width: 100%;
+}
+}

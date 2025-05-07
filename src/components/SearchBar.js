@@ -23,7 +23,7 @@ const SearchBar = () => {
       value={query}
       onChange={(e) => setQuery(e.target.value)}
       />
-      <button type="submit" className="btn btn-danger ms-2">
+      <button type="submit"  className="btn btn-light ms-2">
         Search
       </button>
     </form>

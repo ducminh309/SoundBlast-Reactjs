@@ -118,5 +118,29 @@
         "title": "Học",
         "artist": "DSK",
         "audio": "audio/audiotopchar/hoc.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/thaymavuitoanlamayvanui.jpg",
+        "title": "Thấy Mà Vui Toàn Là Mây Với Núi",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/thaymavuitoanlamayvanui.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/lay.jpg",
+        "title": "Lấy",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/lay.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/anhthanhlientre.jpg",
+        "title": "Anh Thanh Liên Trẻ",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/anhthanhlientre.mp3"
+    },
+    { 
+        "image": "images/imagestopchar/dotthemmotdieunuadiongoi.jpg",
+        "title": "Đốt Thêm Một Điếu Nữa Đi Ông Ơi",
+        "artist": "DSK",
+        "audio": "audio/audiotopchar/dotthemmotdieunuadiongoi.mp3"
     }
 ]

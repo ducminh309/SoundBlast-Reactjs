@@ -13,27 +13,33 @@ const OldSongsPage = () => {
     setSongs90s(data90s);
   }, []);
 
-  const togglePlay = (id) => {
-    const audio = audioRefs.current[id];
-    if (audio) {
-      Object.values(audioRefs.current).forEach((a) => a !== audio && a.pause());
-      audio.paused ? audio.play() : audio.pause();
-    }
-  };
-
   const renderSongCard = (song) => (
     <div key={song.id} className={styles.songCard}>
       <img src={song.cover} alt={song.title} />
       <p className={styles.songTitle}>{song.title}</p>
       <p className={styles.songArtist}>{song.artist}</p>
-      <audio ref={(el) => (audioRefs.current[song.id] = el)} src={song.audio} />
-      <button className={styles.playButton} onClick={() => togglePlay(song.id)}>▶️ Play</button>
+      <audio
+        controls
+        ref={(el) => (audioRefs.current[song.id] = el)}
+        src={song.audio}
+        onPlay={() => {
+          Object.entries(audioRefs.current).forEach(([key, ref]) => {
+            if (key !== song.id.toString() && ref) {
+              ref.pause();
+            }
+          });
+        }}
+        className={styles.audioPlayer}
+      />
     </div>
   );
 
   return (
     <div className={styles.coverWrapper}>
-      <div className={styles.coverBackground} style={{ backgroundImage: "url('/images/imagesoldsong/anhnenoldsong.jpg')" }}>
+      <div
+        className={styles.coverBackground}
+        style={{ backgroundImage: "url('/images/imagesoldsong/anhnenoldsong.jpg')" }}
+      >
         <div className={styles.circleImageWrapper}>
           <img src="/images/imagesoldsong/avata.jpg" alt="Old Song" className={styles.circleImage} />
         </div>
