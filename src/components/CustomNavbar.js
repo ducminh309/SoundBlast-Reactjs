@@ -114,7 +114,7 @@ const CustomNavbar = ({ toggleTheme, isDarkMode }) => {
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <div className="d-flex gap-2">
+              <div className="d-flex gap-2">    
                 <Button size="sm" variant="light">
                   <Link className="nav-link text-black" to="/login">Login</Link>
                 </Button>
