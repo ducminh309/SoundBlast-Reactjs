@@ -10,6 +10,7 @@ const Login = () => {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -22,6 +23,7 @@ const Login = () => {
     try {
       const res = await axios.post('http://localhost:8000/api/login', form);
       localStorage.setItem('token', res.data.token);
+      localStorage.setItem('user', JSON.stringify(res.data.user));
       setMessage('Login successful!');
       setTimeout(() => navigate('/'), 1000);
     } catch (err) {
@@ -65,16 +67,25 @@ const Login = () => {
               />
             </div>
             <div className="mb-2">
-              <label className="form-label">Password</label>
-              <input
-                type="password"
-                name="password"
-                className="form-control"
-                placeholder="Enter your password"
-                onChange={handleChange}
-                required
-              />
-            </div>
+  <label className="form-label">Password</label>
+  <div className="input-group">
+    <input
+      type={showPassword ? "text" : "password"}
+      name="password"
+      className="form-control"
+      placeholder="Enter your password"
+      onChange={handleChange}
+      required
+    />
+    <span
+      className="input-group-text"
+      onClick={() => setShowPassword(!showPassword)}
+      style={{ cursor: "pointer" }}
+    >
+      <i className={`bi ${showPassword ? "bi-eye-slash" : "bi-eye"}`}></i>
+    </span>
+  </div>
+</div>
 
             <div className="d-flex justify-content-between align-items-center mb-3">
               <div className="form-check">

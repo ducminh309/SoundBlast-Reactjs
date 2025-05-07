@@ -31,6 +31,7 @@ const Register = () => {
       // You may need to adjust this based on Laravel backend expectations
       const res = await axios.post('http://localhost:8000/api/register', form);
       localStorage.setItem('token', res.data.token);
+      localStorage.setItem('user', JSON.stringify(res.data.user));
       setMessage('Registration successful!');
       setTimeout(() => navigate('/'), 1000);
     } catch (err) {

@@ -19,7 +19,7 @@ const SearchBar = () => {
       placeholder="Enter song name"
       className="me-2"
       aria-label="Search"
-      style={{ width: "320px", height: "38px, border-radius: 10px;"}}
+      style={{ width: "320px", height: "38px"}}
       value={query}
       onChange={(e) => setQuery(e.target.value)}
       />

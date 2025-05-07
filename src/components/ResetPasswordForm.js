@@ -20,9 +20,14 @@ const ResetPasswordForm = () => {
         password,
         password_confirmation,
       });
-      setMessage(res.data.status);
+      console.log("Reset response:", res.data);
+      setMessage("Password changed successfully! Redirecting to login...");
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 3000);
     } catch (err) {
-      setMessage("Reset failed.");
+      console.error("Reset error:", err);
+      setMessage("Reset failed. Please try again.");
     }
   };
 

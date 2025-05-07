@@ -7,10 +7,13 @@ const ForgotPasswordForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Sending reset link...");
     try {
-      const res = await axios.post("http://localhost:8000/api/forgot-password", { email });
-      setMessage(res.data.status);
+      const res = await axios.post("http://127.0.0.1:8000/dev-reset-link", { email });
+      console.log("Response:", res.data);
+      setMessage(`Reset link: ${res.data.reset_link}`);
     } catch (err) {
+      console.error("Error:", err);
       setMessage("Something went wrong.");
     }
   };
@@ -28,8 +31,19 @@ const ForgotPasswordForm = () => {
           className="form-control mb-3"
         />
         <button className="btn btn-primary">Send Reset Link</button>
-        <p className="mt-3 text-success">{message}</p>
       </form>
+
+      {/* Show clickable reset link */}
+      {message.includes("http") ? (
+        <p className="mt-3">
+          <strong>Reset link:</strong>{" "}
+          <a href={message.split("Reset link: ")[1]} target="_blank" rel="noopener noreferrer">
+            Click here
+          </a>
+        </p>
+      ) : (
+        <p className="mt-3 text-success">{message}</p>
+      )}
     </div>
   );
 };

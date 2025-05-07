@@ -30,12 +30,13 @@ const TrendingNow = () => {
         <Row className="justify-content-center">
           {songs.map((song) => (
             <Col md={4} key={song.id}>
-              <CustomAudioCard
-                image={`http://localhost:8000/${song.image}`}
-                title={song.title}
-                artist={song.artist}
-                audioSrc={`http://localhost:8000/${song.audio}`}
-              />
+            <CustomAudioCard
+              id={song.id}
+              image={`http://localhost:8000/${song.image}`}
+              title={song.title}
+              artist={song.artist}
+              audioSrc={`http://localhost:8000/${song.audio}`}
+          />
             </Col>
           ))}
         </Row>
